@@ -33,19 +33,19 @@ const Footer = () => {
             <WebsiteRights>Alex Arthur Zacco © 2022 All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink 
-                href='/' 
+                href='//www.facebook.com/alex.zacco.7' 
                 target='_blank' 
                 aria-label='Facebook'
               >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink 
+              {/* <SocialIconLink 
                 href='/' 
                 target='_blank' 
                 aria-label='Instagram'
               >
                 <FaInstagram />
-              </SocialIconLink>
+              </SocialIconLink> */}
               <SocialIconLink
                 href='//www.youtube.com/channel/UCo_-5H-1CV07KYpecxK_y3w'
                 target='_blank'
