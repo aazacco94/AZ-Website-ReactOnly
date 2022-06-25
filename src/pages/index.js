@@ -11,12 +11,9 @@ import {
 import ServiceSection from '../components/ServiceSection';
 import { 
   projectServices,
-  gameplayServices 
+  gameplayServices,
+  certificationData 
 } from '../components/ServiceSection/Data';
-import GallerySection from '../components/GallerySection';
-import { 
-  certificationData
-} from '../components/GallerySection/Data';
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +28,7 @@ function Home() {
       <HeroSection {...HeroHomeData}/>
       <InfoSection {...homeObjOne} />
       <ServiceSection {...projectServices} />
-      <GallerySection {...certificationData}/>
+      <ServiceSection {...certificationData}/>
       <ServiceSection {...gameplayServices} />
       <Footer />
     </>
