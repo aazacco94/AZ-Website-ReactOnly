@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { Button } from '../ButtonElements';
+import { Button } from '../Shared/ButtonElements';
 
 import {
-  HeroContainer,
-  HeroBg,
+  BannerContainer,
+  BannerBg,
   VideoBg,
-  HeroContent,
-  HeroH1,
-  HeroP,
-  HeroBtnWrapper,
+  BannerContent,
+  BannerH1,
+  BannerP,
+  BannerBtnWrapper,
   ArrowForward,
   ArrowRight
-} from './HeroElements';
+} from './BannerElements';
 
-const HeroSection = props => {
+const BannerSection = props => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -21,19 +21,19 @@ const HeroSection = props => {
   };
   return (
     <>
-      <HeroContainer id={props.id}>
-        <HeroBg>
+      <BannerContainer id={props.id}>
+        <BannerBg>
           <VideoBg playsInline autoPlay loop muted src={props.videolink} type='video/mp4' />
-        </HeroBg>
-        <HeroContent>
-            <HeroH1>{props.header}</HeroH1>
-          <HeroP>
+        </BannerBg>
+        <BannerContent>
+            <BannerH1>{props.header}</BannerH1>
+          <BannerP>
             {props.desc1}
-          </HeroP>
-          <HeroP>
+          </BannerP>
+          <BannerP>
             {props.desc2}
-          </HeroP>
-          <HeroBtnWrapper>
+          </BannerP>
+          <BannerBtnWrapper>
             <Button
               to={props.buttonLink}
               smooth={true}
@@ -48,11 +48,11 @@ const HeroSection = props => {
             >
               {props.buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
-          </HeroBtnWrapper>
-        </HeroContent>
-      </HeroContainer>
+          </BannerBtnWrapper>
+        </BannerContent>
+      </BannerContainer>
     </>
   );
 };
 
-export default HeroSection;
+export default BannerSection;

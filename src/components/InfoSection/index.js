@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonLink } from '../ButtonElements';
+import { ButtonLink } from '../Shared/ButtonElements';
 import {
   InfoContainer,
   InfoWrapper,

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
-import HeroSection from '../components/HeroSection';
-import {HeroHomeData} from '../components/HeroSection/Data';
+import BannerSection from '../components/BannerSection';
+import { BannerData } from '../components/BannerSection/Data';
 import InfoSection from '../components/InfoSection';
 import {
   homeObjOne
@@ -25,7 +25,7 @@ function Home() {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <HeroSection {...HeroHomeData}/>
+      <BannerSection {...BannerData}/>
       <InfoSection {...homeObjOne} />
       <ServiceSection {...projectServices} />
       <ServiceSection {...certificationData}/>
